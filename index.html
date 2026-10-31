@@ -1,30 +1,93 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css">
+<!-- saved from url=(0061)file:///C:/Users/ramya/OneDrive/Desktop/CyberAware/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Cyber Security Awareness</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
     <div class="container">
+        <h1>Stay Safe Online 🔐</h1>
 
-        <h1>Password Generator 🔐</h1>
+        <p>
+            Learn how to protect yourself from cyber threats,
+            phishing scams, and password attacks.
+        </p>
+        <img src="./cyber.png" width="300">
+        <button>Learn More</button>
 
-        <input type="number"
-        id="length"
-        placeholder="Enter Password Length">
+        <div class="card">
+            <h2>Strong Password Tips</h2>
+            <ul>
+                <li>Use 12+ characters</li>
+                <li>Mix letters and numbers</li>
+                <li>Do not share passwords</li>
+            </ul>
+        </div>
 
-        <button onclick="generatePassword()">
-            Generate Password
-        </button>
-
-        <p id="password"></p>
+        <div class="card">
+            <h2>Phishing Awareness</h2>
+            <ul>
+                <li>Avoid suspicious links</li>
+                <li>Check sender emails carefully</li>
+                <li>Never share OTP</li>
+            </ul>
+        </div>
 
     </div>
+    <div class="card">
+    <h2>Cyber Safety Tips</h2>
 
-<script src="script.js"></script>
+    <ul>
+        <li>Never share OTP</li>
+        <li>Use strong passwords</li>
+        <li>Avoid suspicious links</li>
+        <li>Enable two-factor authentication</li>
+    </ul>
+</div>
+<footer>
+    <p>Created by Muthulakshmi</p>
+</footer>
+<div class="card">
 
-</body>
-</html>
+    <h2>Password Strength Checker 🔐</h2>
+
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <button onclick="checkPassword()">
+        Check Strength
+    </button>
+
+    <p id="result"></p>
+
+</div>
+
+<script>
+
+function checkPassword(){
+
+    let password =
+    document.getElementById("password").value;
+
+    let result =
+    document.getElementById("result");
+
+    if(password.length < 6){
+        result.innerHTML = "Weak Password ❌";
+    }
+
+    else if(password.length < 10){
+        result.innerHTML = "Medium Password ⚠️";
+    }
+
+    else{
+        result.innerHTML = "Strong Password ✅";
+    }
+
+}
+
+</script>
+
+
+</body></html>
