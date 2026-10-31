@@ -1,15 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #0a0f24;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 .container {
     background-color: #111936;
     max-width: 800px;
+    width: 100%;
     margin: 0 auto 30px;
     padding: 30px;
     border-radius: 15px;
@@ -19,7 +24,77 @@ body {
 .card {
     background-color: #111936;
     max-width: 800px;
+    width: 100%;
     margin: 25px auto;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0
+    box-shadow: 0 0 12px #00ffff;
+}
+
+h1, h2 {
+    color: #00ffff;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+    padding-left: 25px;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input {
+    padding: 12px;
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00ffff;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+footer {
+    margin: 30px 0;
+    padding: 15px;
+    background-color: #111936;
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+    color: #00ffff;
+}
+
+#result {
+    color: #00ffff;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .container, .card {
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+}
