@@ -1,42 +1,25 @@
-body{
+body {
     background-color: #0a0f24;
     color: white;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     text-align: center;
-    padding-top: 100px;
+    margin: 0;
+    padding: 50px 20px;
 }
 
-.container{
+.container {
     background-color: #111936;
-    width: 50%;
-    margin: auto;
+    max-width: 800px;
+    margin: 0 auto 30px;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px #00ffff;
+    box-shadow: 0 0 15px #00ffff;
 }
 
-h1{
-    color: #00ffff;
-}
-
-input{
-    padding: 12px;
-    width: 60%;
-    border-radius: 10px;
-    border: none;
-}
-
-button{
-    padding: 12px 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: #00ffff;
-    margin-top: 15px;
-    cursor: pointer;
-}
-
-p{
-    margin-top: 20px;
-    font-size: 20px;
-    color: #00ffff;
-}
+.card {
+    background-color: #111936;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0
